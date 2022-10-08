@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.data-container {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+}
+
+.title {
+  margin-top: 2.5rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+img {
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+input {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  margin-bottom: 0;
+  border: transparent;
+  border-bottom: 2px solid red;
+  color: white;
+  background: transparent;
+  width: 80%;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+p {
+  text-align: right;
+  padding: 0;
+  padding-top: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+button {
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+  border: 2px solid red;
+  border-radius: 10px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.back-btn {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid red;
+  border-radius: 10px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 1rem;
+}
+
+.back-btn:hover {
+  color: white;
+  background-color: red;
+}
+
+.register-btn:hover {
+  color: white;
+  background-color: red;
+}
+
+hr {
+  color: red;
+  background-color: red;
+  background: red;
+}
+
+.desktop-img {
+  max-width: 500px;
+}
+
+.mobile-img {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .data-container {
+    padding: 0.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  h1,
+  h2 {
+    padding: 0.5rem;
+  }
+
+  h1,
+  h2,
+  label {
+    font-size: 1.25rem;
+  }
+
+  form {
+    padding: 0.5rem 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    margin: 1.5rem auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .back-btn {
+    top: 38%;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    height: 250px;
+    width: 100vw;
+  }
+
+  .mobile-img img {
+    width: 100vw;
+    object-fit: cover;
+  }
+}

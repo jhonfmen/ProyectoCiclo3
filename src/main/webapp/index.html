@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - I-fit</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://kit.fontawesome.com/bd831fad42.js" crossorigin="anonymous"></script>
+  <script src="./js/app.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./public/favicon.png" type="image/png">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-dark px-4 py-2">
+    <div class="container-fluid">
+      <a class="navbar-brand text-bg-dark" href="#">
+        <img class="logo" src="./public/favicon.png" alt="">
+        I - FIT
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav gap-2">
+          <a class="nav-link text-bg-dark" href="#equipo">Nuestro Equipo</a>
+          <a class="nav-link text-bg-dark" href="#servicios">Servicios</a>
+          <a class="nav-link text-bg-dark" href="#contactanos">Contactanos</a>
+          <a href="login.html" class="btn btn-danger mx-auto">Inicia sesion</a>
+          <a href="register.html" class="btn btn-danger mx-auto">Registrate</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+
+  <header id="inicio">
+    <video muted autoplay loop class="video-container">
+      <source src="./public/banner.mp4" type="video/mp4">
+    </video>
+    <div class="flex flex-col flex-wrap text-center gap-5">
+      <h1>Ejercita tu mente, cuerpo y alma</h1>
+      <a href="register.html" class="btn btn-danger mt-4">Registrate</a>
+    </div>
+    <button class="video-btn">
+      <span class="play-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </span>
+      <span class="pause-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause">
+          <rect x="6" y="4" width="4" height="16"></rect>
+          <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+      </span>
+    </button>
+    <a class="down-btn" href="#equipo">
+      <i class="fa-sharp fa-solid fa-arrow-down"></i>
+    </a>
+  </header>
+
+  <!-- NUESTRO EQUIPO -->
+
+  <h2>Nuestro equipo</h2>
+  <div class="card-group px-4 gap-1 mt-3" id="equipo">
+    <div class="card">
+      <img src="./public/NuestroEquipo1.jpg" class="card-img-top" alt="Entrenador"
+        style="height: 400px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Adrian Reales</h5>
+        <p class="card-text" style="text-align: justify;">"Dar el paso y apuntarte al gimnasio es fácil. Lo difícil es
+          ir al día siguiente. Y así de
+          forma sucesiva. ¿Estás seguro de que serás diligente y no te vencerá la pereza cada tarde o cada mañana? No es
+          una bobada."</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./public/NuestroEquipo2.jpg" class="NuestroEquipo-img card-img-top" alt="Entrenador"
+        style="height: 400px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Andres y Lucia Giraldo</h5>
+        <p class="card-text" style="text-align: justify;">"Los ejercicios de barra son difíciles de enseñar, la
+          instrucción adecuada consume mucho
+          tiempo, y si se realiza incorrectamente con demasiado peso, existe un alto riesgo de lesiones"</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./public/NuestroEquipo3.jpg" class="card-img-top" alt="Entrenador"
+        style="height: 400px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Manuel Jimenez</h5>
+        <p class="card-text" style="text-align: justify;">"Los entrenadores que no crean un plan de ejercicio
+          personalizado a cada sujeto también
+          pueden ser un desperdicio de dinero, ya que no están realizando un seguimiento activo de tus progresos o bien
+          de una planificación de objetivos"</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+
+  <h2>Membresía</h2>
+  <div class="card-group px-4 gap-1 mt-3" id="servicios">
+    <div class="card">
+      <img src="./public/Classic.png" class="card-img-top" alt="Membresía">
+      <div class="card-body">
+        <h5 class="card-title">CLASICA</h5>
+        <p class="card-text">Contarás con áreas de peso libre, peso integrado, peso cardio y clases grupales así como el
+          acceso a todas las áreas del gimnasio, sin cargo de cancelación.</p>
+        <p class="card-text"><small class="text-muted">¡Perfecto para principiantes!</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./public/PRO.png" class="card-img-top" alt="Membresía">
+      <div class="card-body">
+        <h5 class="card-title">PRO</h5>
+        <p class="card-text">Contarás con áreas de peso libre, peso integrado, peso cardio y clases grupales así como el
+          acceso a todas las áreas del gimnasio, sin cargo de cancelación. Tendras acceso a las áreas humedas, invitar a
+          5 amigos al mes a entrenar, acceso al SPA.</p>
+        <p class="card-text"><small class="text-muted">¡Para que disfrutes en compañía!</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./public/PRO2.png" class="card-img-top" alt="Membresía">
+      <div class="card-body">
+        <h5 class="card-title">PROFESSIONAL 2</h5>
+        <p class="card-text">Contarás con áreas de peso libre, peso integrado, peso cardio y clases grupales así como el
+          acceso a todas las áreas del gimnasio, sin cargo de cancelación. Tendras acceso a las áreas humedas, una
+          sucripción gratuita para un familar por 1 mes y acceso al SPA para ti y tu familiar.</p>
+        <p class="card-text"><small class="text-muted">¡Imperdible!</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIOS -->
+
+  <h2>Testimonios</h2>
+  <div class="card-group px-4 gap-1 mt-3">
+    <div class="card">
+      <img src="./public/testimonio1.jpg" class="card-img-top" alt="Testimonio"
+        style="height: 400px; object-fit: cover;" />
+      <div class=" card-body">
+        <h5 class="card-title">Miguel Torralvo</h5>
+        <p class="card-text">Los nuevos hábitos debemos introducirlos en nuestra rutina poco a poco y en gran parte de
+          eso I-Fit fue mi apoyo.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./public/testimonio2.jpg" class="card-img-top" alt="Testimonio"
+        style="height: 400px; object-fit: cover;" />
+      <div class=" card-body">
+        <h5 class="card-title">Ana Reales</h5>
+        <p class="card-text">Hasta hace un par de años mi deporte favorito era estar tirada en el sofá de casa, ahora
+          soy una mujer nueva fascinada por ejercitarme.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./public/testimonio3.jpg" class="card-img-top" alt="Testimonio"
+        style="height: 400px; object-fit: cover;" />
+      <div class=" card-body">
+        <h5 class="card-title">Guillermo Villareal</h5>
+        <p class="card-text">Si sabemos que fallamos, tendremos que hacernos un calendario, ponerlo en la agenda como si
+          fuera una obligación, no dejarlo al azar.</p>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <!-- FOOTER -->
+  <div class="container-fluid mt-5 p-0" id="contactanos">
+
+    <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="text-center mx-auto col-lg-4 col-md-12 mb-4 mb-md-0">
+
+            <img src="./public/favicon.png" class="logo-footer" alt="logo-footer" />
+
+            <div class="mt-4">
+              <!-- Facebook -->
+              <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fab fa-facebook-f"></i></a>
+              <!-- Dribbble -->
+              <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fab fa-instagram"></i></a>
+              <!-- Twitter -->
+              <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fab fa-twitter"></i></a>
+              <!-- Google + -->
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Contactanos:</h5>
+
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Bogotá, calle 9b cra 2# 17 -
+                  12</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">I-fit@google.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 57 305 456 1265</span>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Horario:</h5>
+
+            <table class="table text-center text-white">
+              <tbody class="font-weight-normal">
+                <tr>
+                  <td>Lunes - Sabados:</td>
+                  <td>7am - 7pm</td>
+                </tr>
+                <tr>
+                  <td>Domigos:</td>
+                  <td>7am - 12m</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center d-grid p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <h3>Hecho con ❤ por:</h3>
+
+
+        <div>
+          <div class="d-flex flex-wrap justify-content-around gap-2 mb-4">
+            <div>
+              <h6>Ana Rincon</h6>
+              <a href="https://www.linkedin.com/in/ana-milena-7b1705a2" type="button"
+                class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/jhonfmen" type="button" class="btn btn-floating btn-dark"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+            <div>
+              <h6>Breiner Torres</h6>
+              <a href="https://www.linkedin.com/in/breinerjtorres" type="button" class="btn btn-floating btn-dark"><i
+                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/BreinerJT" type="button" class="btn btn-floating btn-dark"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+            <div>
+              <h6>Jhon Faber</h6>
+              <a href="https://www.linkedin.com/in/jhon-mendoza-84b4a5238" type="button"
+                class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/jhonfmen" type="button" class="btn btn-floating btn-dark"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <div>
+              <h6>Brayan xxxx</h6>
+              <a href="https://www.linkedin.com/in/" type="button" class="btn btn-floating btn-dark"><i
+                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/BrianGonzalezBeltran" type="button" class="btn btn-floating btn-dark"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+            <div>
+              <h6>Esteban Noreña</h6>
+              <a href="https://www.linkedin.com/in/esteban-norena-giraldo-164070227" type="button"
+                class="btn btn-floating btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/esnogi" type="button" class="btn btn-floating btn-dark"><i
+                  class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

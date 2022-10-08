@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Registro - I-Fit</title>
+        <link rel="shortcut icon" href="./public/favicon.png" type="image/png">
+        <link rel="stylesheet" href="./css/register.css">
+        <script src="https://kit.fontawesome.com/bd831fad42.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <picture class="mobile-img">
+                <img src="./public/heroForms.png" />
+            </picture>
+            <div class="data-container">
+                <a href="index.html" class="back-btn"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+                <h1 class="title">Registrate</h1>
+                <h2>Ingresa tu informacion para registrarte.</h2>
+                <hr color="red" />
+                <form id="form-register">
+                    <label>
+                        Nombre y apellido:
+                        <input id="input-nombre" type="text" placeholder="Inserte su nombre.">
+                    </label>
+                    <label>
+                        Correo:
+                        <input id="input-correo" type="email" placeholder="Inserte su correo.">
+                    </label>
+                    <label>
+                        Contraseña:
+                        <input id="input-contrasena" type="password" placeholder="Inserte su contraseña.">
+                    </label>
+                    <label>
+                        Repite tu Contraseña:
+                        <input id="input-contrasena-repeat" type="password" placeholder="Inserte su contraseña.">
+                    </label>
+                    <p>¿Ya tienes cuenta?<a href="login.html">
+                            Inicia sesion!
+                        </a></p>
+                    <button class="register-btn btn btn-primary" id="register-btn">
+                        Registrarse
+                    </button>
+                </form>
+                <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
+            </div>
+            <picture class="desktop-img">
+                <img src="./public/heroForms.png" />
+            </picture>
+        </div>
+    </body>
+
+</html>
